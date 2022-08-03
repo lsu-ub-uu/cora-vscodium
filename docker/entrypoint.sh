@@ -34,7 +34,7 @@ firstRun(){
 installVSCodium(){
 	echo "Installing VSCodium...";
 	mkdir ~/vscodium/vscodiumforcora
-	wget -O - https://github.com/VSCodium/vscodium/releases/download/1.67.2/VSCodium-linux-x64-1.67.2.tar.gz | tar zxf - -C ~/vscodium/vscodiumforcora
+	wget -O - https://github.com/VSCodium/vscodium/releases/download/1.69.2/VSCodium-linux-x64-1.69.2.tar.gz | tar zxf - -C ~/vscodium/vscodiumforcora
 
 	if $RECOMMENDEDSETUP; then
 		setupWithRecommendedData
