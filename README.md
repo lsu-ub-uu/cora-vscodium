@@ -1,5 +1,15 @@
 This repository contains a dockerized environment specifically tailored to be used for development of the DiVA React client and related repositories. The goal is that a developer should be able to follow the steps below and wind up with a working dev environment for diva-react-client.
 
+
+# Overview
+Following the guide below will set up a Fedora docker with software and settings tailored to diva-react-client.
+It will
+
+  1. Install VSCodium, nodejs, npm, git
+  2. Install recommended extensions
+  3. Pull repositories diva-react-client and diva-docker-react-client
+  4. Run npm install & npm build for diva-cora-ts-api-wrapper and diva-resource-fetcher. Run npm install for diva-react-client
+
 # Usage
 
 ## Prerequisites
@@ -25,13 +35,18 @@ parentDir
 |- startCurrentVSCodiumForCora.sh
 |- vscodium1_69_2forcora1/
 ```
-#
+
+### First start
 1. To start, run `./startCurrentVSCodiumForCora.sh` from your parentDir.
 2. Go through the "Get Started with VS Code" sections, or just choose your color theme and "Mark Done"
 3. "Open Folder" `workspace/cora-react-client`
 4. If asked "Do you trust the authors of the files in this folder?" you can confirm if you want, check the checkbox if you plan to only clone repos into workspace that you trust
-5. Follow the steps in https://github.com/lsu-ub-uu/cora-react-client/ "To get started", skip step 1.
+5. Follow the steps in [diva-react-client's readme "To get started"](https://github.com/lsu-ub-uu/diva-react-client/tree/master/diva-react-client#to-get-started), skip step 1.
 
+
+## Subsequent starts
+
+run `./startCurrentVSCodiumForCora.sh` from your parentDir.
 
 ## Pushing to Github
 
@@ -69,8 +84,6 @@ parentDir
 3. cd into the parentDir
 4. Have your dockerId ready, to get it run `getent group docker`
 5. run `./cora-vscodium/runAll.sh <your-docker-id> false master nocache`, replace `<your-docker-id>` with your docker id.
-
-
 
 # For maintainers of this repository
 
