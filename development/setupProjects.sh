@@ -3,10 +3,10 @@
 workspaceDir=$1
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname $SCRIPT)
+originRepo="https://github.com/lsu-ub-uu/"
 
 start(){
 	setUser;
-	chooseRepo;
 	importProjectListing;
 	preventGitAskingForUsernameAndPasswordIfRepoIsMissing;
 	addAllRepositories;
@@ -20,11 +20,6 @@ setUser(){
 		user=$USER
 		export user
 	fi
-}
-
-chooseRepo(){
-	originRepo="https://github.com/lsu-ub-uu/"
-	echo "Origin choosen as: $originRepo"
 }
 
 importProjectListing() {
@@ -141,14 +136,6 @@ useBelanglosAsOrigin(){
 	fi
 }
 
-# addOtherRemotes(){
-# 	local projectName=$1
-# 	for otherRepoName in $otherRepos; do
-# 		#echo "git remote add github-$otherRepoName https://github.com/$otherRepoName/$projectName.git"
-# 		git remote add github-$otherRepoName https://github.com/$otherRepoName/$projectName.git
-# 	done
-# }
-	
 
 # ################# calls start here #######################################
 if [ ! $workspaceDir ]; then
