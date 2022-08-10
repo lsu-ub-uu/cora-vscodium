@@ -1,6 +1,5 @@
 This repository contains a dockerized environment specifically tailored to be used for development of the DiVA React client and related repositories. The goal is that a developer should be able to follow the steps below and wind up with a working dev environment for diva-react-client.
 
-
 # Overview
 Following the guide below will set up a Fedora docker with software and settings tailored to diva-react-client.
 It will
@@ -102,7 +101,7 @@ At the time of writing, this results in 23 results in 7 files.
 2. Compare it to the version specified in `docker/entrypoint.sh` (currently line 37)
 3. If it's newer, copy the link to the correct tar.gz file and paste it into entrypoint.sh
 
-
 ## Extensions
 
 Four extensions are automatically packaged within cora-vscodium. To update to a newer version, find the correct vsix or zip file on the extension's respective github page, and update the download link in `docker/entrypoint.sh
+
