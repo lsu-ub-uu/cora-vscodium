@@ -12,7 +12,7 @@ It will
 # Usage
 
 ## Prerequisites
-
+- Install Docker if you haven't already.
 - Create a folder which will contain the installations of cora-vscodium, e.g. `mkdir parentDir`
 - `cd parentDir`
 - Clone this repo, e.g. `git clone https://github.com/lsu-ub-uu/cora-vscodium/`
