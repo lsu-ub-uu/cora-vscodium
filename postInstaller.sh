@@ -5,7 +5,7 @@ RECOMMENDEDSETUP=${1:-false}
 SCRIPT=$(readlink -f "$0")
 BASEDIR=$(dirname $SCRIPT)
 PARENTDIR="$(dirname "$BASEDIR")"
-INSTALLVERSION=vscodium1_69_2forcora1
+INSTALLVERSION=vscodium1_74_3forcora1
 INSTALLDIR=$PARENTDIR/$INSTALLVERSION
 
 updateOrCreateEnv(){

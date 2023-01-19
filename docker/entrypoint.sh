@@ -51,7 +51,7 @@ setupWithRecommendedData(){
 	~/vscodium/vscodiumforcora/codium
 
 	echo "Moving settings.json"
-	mv ~/data/settings.json ~/vscodium/vscodiumforcora/data/user-data/User
+	mv ~/data/settings.json ~/vscodium/vscodiumforcora/data/user-data/User/
 
 	echo "Removing settings.json" 
 	rm ~/data/settings.json
@@ -87,5 +87,5 @@ installExtensions(){
 if [ ! -d ~/workspace/cora-vscodium ]; then
   	firstRun
 else
-	~/vscodium/vscodiumforcora/codium
+	~/vscodium/vscodiumforcora/codium --enable-features=UseOzonePlatform --ozone-platform=wayland
 fi

@@ -23,9 +23,9 @@ fi
 echo "Container runtime will be "${CONTAINERRUNTIME}
 
 if [ ! $USER ]; then
-  	echo "You must specify the userName used when starting vscodium1_69_2forcora1TempSetup"
+  	echo "You must specify the userName used when starting vscodium1_74_3forcora1TempSetup"
 else
-cd vscodium1_69_2forcora1
+cd vscodium1_74_3forcora1
 #${CONTAINERRUNTIME} run --rm -ti --privileged --net=host --ipc=host --env="QT_X11_NO_MITSHM=1"  -e DISPLAY=$DISPLAY \
 ${CONTAINERRUNTIME} run --rm -ti --privileged  --ipc=host \
  --env="QT_X11_NO_MITSHM=1"\
@@ -42,7 +42,7 @@ ${CONTAINERRUNTIME} run --rm -ti --privileged  --ipc=host \
  -e user=$USER\
  -e vscodiumbranch=$VSCODIUMBRANCH\
  -e RECOMMENDEDSETUP=$RECOMMENDEDSETUP\
- --name vscodium1_69_2forcora1TempSetup\
- vscodium1_69_2forcora1
+ --name vscodium1_74_3forcora1TempSetup\
+ vscodium1_74_3forcora1
  cd ../
 fi
