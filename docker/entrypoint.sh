@@ -87,5 +87,5 @@ installExtensions(){
 if [ ! -d ~/workspace/cora-vscodium ]; then
   	firstRun
 else
-	~/vscodium/vscodiumforcora/codium --enable-features=UseOzonePlatform --ozone-platform=wayland
+	~/vscodium/vscodiumforcora/codium --enable-features=UseOzonePlatform --ozone-platform=wayland --no-sandbox
 fi
