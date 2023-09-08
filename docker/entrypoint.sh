@@ -66,13 +66,13 @@ installExtensions(){
 	unzip -d /tmp/vscode-eslint /tmp/vscode-eslint.vsix
 	mv /tmp/vscode-eslint/extension ~/vscodium/vscodiumforcora/data/extensions/dbaeumer.vscode-eslint-2.2.0
 
-	wget -O /tmp/prettier-vscode.vsix https://github.com/prettier/prettier-vscode/releases/download/v9.6.0/prettier-vscode-9.6.0.vsix
+	wget -O /tmp/prettier-vscode.vsix https://github.com/prettier/prettier-vscode/releases/download/v10.1.0/prettier-vscode-10.1.0.vsix
 	unzip -d /tmp/prettier-vscode /tmp/prettier-vscode.vsix
-	mv /tmp/prettier-vscode/extension ~/vscodium/vscodiumforcora/data/extensions/esbenp.prettier-vscode-9.6.0
+	mv /tmp/prettier-vscode/extension ~/vscodium/vscodiumforcora/data/extensions/esbenp.prettier-vscode-10.1.0
 
-	wget -O /tmp/codetogether.vsix https://github.com/Genuitec/CodeTogether/releases/download/2022.2.1/codetogether-2022.2.1.vsix
+	wget -O /tmp/codetogether.vsix https://github.com/Genuitec/CodeTogether/releases/download/2023.1.1/codetogether-2023.1.1.vsix
 	unzip -d /tmp/codetogether /tmp/codetogether.vsix
-	mv /tmp/codetogether/extension ~/vscodium/vscodiumforcora/data/extensions/genuitecllc.codetogether-2022.2.1
+	mv /tmp/codetogether/extension ~/vscodium/vscodiumforcora/data/extensions/genuitecllc.codetogether-2023.1.1
 
 	wget -O /tmp/vscode-toggle-quotes.zip https://github.com/BriteSnow/vscode-toggle-quotes/archive/refs/tags/v0.3.6.zip
 	unzip -d /tmp/vscode-toggle-quotes /tmp/vscode-toggle-quotes.zip
