@@ -48,7 +48,7 @@ setupWithRecommendedData(){
 	mkdir ~/vscodium/vscodiumforcora/data
 
 	echo "Starting VSCodium for the first time to create folder structure in data"
-	~/vscodium/vscodiumforcora/codium --enable-features=UseOzonePlatform --ozone-platform=wayland
+	~/vscodium/vscodiumforcora/codium --enable-features=UseOzonePlatform --ozone-platform=wayland --no-sandbox
 
 	echo "Moving settings.json"
 	mv ~/data/settings.json ~/vscodium/vscodiumforcora/data/user-data/User/
