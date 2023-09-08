@@ -82,8 +82,8 @@ parentDir
 2. run git pull to get the latest version - if there's nothing new, you can skip the next steps
 3. cd into the parentDir
 4. Have your dockerId ready, to get it run `getent group docker`
-5. to get updated fedora packages: run `./cora-vscodium/runAll.sh <your-docker-id> false master nocache`, replace `<your-docker-id>` with your docker id.
-5. not updated fedora packages(faster): run `./cora-vscodium/runAll.sh <your-docker-id> false master`, replace `<your-docker-id>` with your docker id.
+5. to get updated fedora packages: run `./cora-vscodium/runAll.sh <your-docker-id> true master nocache`, replace `<your-docker-id>` with your docker id.
+5. not updated fedora packages(faster): run `./cora-vscodium/runAll.sh <your-docker-id> true master`, replace `<your-docker-id>` with your docker id.
 
 # For maintainers of this repository
 
