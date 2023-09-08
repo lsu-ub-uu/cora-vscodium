@@ -29,10 +29,10 @@ firstRun(){
 	cd ../diva-react-client
 	npm install
 	
-	cd ../diva-react-spa
+	cd ~/workspace/diva-react-spa
 	npm install
 
-	cd ../diva-react-spa-bff
+	cd ~/workspace/diva-react-spa-bff
 	npm install
 }
 
