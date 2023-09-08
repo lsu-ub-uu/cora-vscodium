@@ -61,27 +61,30 @@ setupWithRecommendedData(){
 }
 
 installExtensions(){
+	# to get list of current version number
+	# ~/vscodium/vscodiumforcora/bin/codium --no-sandbox --list-extensions --show-versions
+	
 	echo "Installing recommended extensions"
-	wget -O /tmp/vscode-eslint.vsix https://github.com/microsoft/vscode-eslint/releases/download/release%2F2.2.20-Insider/vscode-eslint-2.2.0.vsix
-	unzip -d /tmp/vscode-eslint /tmp/vscode-eslint.vsix
-	mv /tmp/vscode-eslint/extension ~/vscodium/vscodiumforcora/data/extensions/dbaeumer.vscode-eslint-2.2.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension BriteSnow.vscode-toggle-quotes@0.3.6
+	~/vscodium/vscodiumforcora/codium --force --install-extension genuitecllc.codetogether@2023.1.1
 
-	wget -O /tmp/prettier-vscode.vsix https://github.com/prettier/prettier-vscode/releases/download/v10.1.0/prettier-vscode-10.1.0.vsix
-	unzip -d /tmp/prettier-vscode /tmp/prettier-vscode.vsix
-	mv /tmp/prettier-vscode/extension ~/vscodium/vscodiumforcora/data/extensions/esbenp.prettier-vscode-10.1.0
-
-	wget -O /tmp/codetogether.vsix https://github.com/Genuitec/CodeTogether/releases/download/2023.1.1/codetogether-2023.1.1.vsix
-	unzip -d /tmp/codetogether /tmp/codetogether.vsix
-	mv /tmp/codetogether/extension ~/vscodium/vscodiumforcora/data/extensions/genuitecllc.codetogether-2023.1.1
-
-	wget -O /tmp/vscode-toggle-quotes.zip https://github.com/BriteSnow/vscode-toggle-quotes/archive/refs/tags/v0.3.6.zip
-	unzip -d /tmp/vscode-toggle-quotes /tmp/vscode-toggle-quotes.zip
-	mv /tmp/vscode-toggle-quotes/vscode-toggle-quotes-0.3.6 ~/vscodium/vscodiumforcora/data/extensions/
-
-	cd ~/vscodium/vscodiumforcora/data/extensions/vscode-toggle-quotes-0.3.6
-	npm install
-	npm run vscode:prepublish
-
+	~/vscodium/vscodiumforcora/codium --force --install-extension dbaeumer.vscode-eslint@2.4.2
+	~/vscodium/vscodiumforcora/codium --force --install-extension eamodio.gitlens@13.5.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension esbenp.prettier-vscode@10.1.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension formulahendry.auto-close-tag@0.5.14
+	~/vscodium/vscodiumforcora/codium --force --install-extension formulahendry.auto-rename-tag@0.1.10
+	~/vscodium/vscodiumforcora/codium --force --install-extension humao.rest-client@0.25.1
+	~/vscodium/vscodiumforcora/codium --force --install-extension jeff-hykin.better-dockerfile-syntax@1.0.2
+	~/vscodium/vscodiumforcora/codium --force --install-extension jeff-hykin.better-shellscript-syntax@1.6.2
+	~/vscodium/vscodiumforcora/codium --force --install-extension maciekkoks.luvia-theme@0.1.24
+	~/vscodium/vscodiumforcora/codium --force --install-extension MartinJohns.inline-types@0.3.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension mhutchie.git-graph@1.30.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension ms-azuretools.vscode-docker@1.24.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension naumovs.color-highlight@2.5.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension Nixon.env-cmd-file-syntax@0.3.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension PKief.material-icon-theme@4.30.1
+	~/vscodium/vscodiumforcora/codium --force --install-extension SonarSource.sonarlint-vscode@3.21.0
+	~/vscodium/vscodiumforcora/codium --force --install-extension wix.vscode-import-cost@3.3.0
 }
 
 if [ ! -d ~/workspace/cora-vscodium ]; then
