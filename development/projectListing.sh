@@ -2,10 +2,13 @@
 
 VSCODIUM="cora-vscodium"
 
-JS="diva-react-client diva-react-spa-bff diva-react-spa "
-JS_CONTAINER="diva-docker-react-client "
+JS_OLD="diva-react-client "
+JS="diva-react-spa-bff diva-react-spa "
 
-ALL_JS=$JS" "$JS_CONTAINER
+JS_CONTAINER_OLD="diva-docker-react-client "
+JS_CONTAINER="diva-react-spa-docker diva-react-spa-bff-docker "
+
+ALL_JS=$JS_OLD" "$JS" "$JS_CONTAINER_OLD" "$JS_CONTAINER
 
 
 

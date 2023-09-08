@@ -28,7 +28,12 @@ firstRun(){
 
 	cd ../diva-react-client
 	npm install
-    
+	
+	cd ../diva-react-spa
+	npm install
+
+	cd ../diva-react-spa-bff
+	npm install
 }
 
 installVSCodium(){
@@ -71,6 +76,7 @@ installExtensions(){
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension dbaeumer.vscode-eslint@2.4.2
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension eamodio.gitlens@13.5.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension esbenp.prettier-vscode@10.1.0
+	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension firsttris.vscode-jest-runner@0.4.66
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension formulahendry.auto-close-tag@0.5.14
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension formulahendry.auto-rename-tag@0.1.10
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension humao.rest-client@0.25.0
