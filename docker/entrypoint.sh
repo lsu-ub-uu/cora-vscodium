@@ -73,15 +73,15 @@ installExtensions(){
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension esbenp.prettier-vscode@10.1.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension formulahendry.auto-close-tag@0.5.14
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension formulahendry.auto-rename-tag@0.1.10
-	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension humao.rest-client@0.25.1
+	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension humao.rest-client@0.25.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension jeff-hykin.better-dockerfile-syntax@1.0.2
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension jeff-hykin.better-shellscript-syntax@1.6.2
-	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension maciekkoks.luvia-theme@0.1.24
-	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension MartinJohns.inline-types@0.3.0
+#~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension maciekkoks.luvia-theme@0.1.24
+#~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension MartinJohns.inline-types@0.3.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension mhutchie.git-graph@1.30.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension ms-azuretools.vscode-docker@1.24.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension naumovs.color-highlight@2.5.0
-	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension Nixon.env-cmd-file-syntax@0.3.0
+#~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension Nixon.env-cmd-file-syntax@0.3.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension PKief.material-icon-theme@4.30.1
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension SonarSource.sonarlint-vscode@3.21.0
 	~/vscodium/vscodiumforcora/bin/codium --no-sandbox --force --install-extension wix.vscode-import-cost@3.3.0
