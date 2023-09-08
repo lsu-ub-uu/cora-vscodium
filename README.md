@@ -32,7 +32,7 @@ parentDir
 |- cora-vscodium/
 |- env.sh
 |- startCurrentVSCodiumForCora.sh
-|- vscodium1_74_3forcora2/
+|- vscodium1_82_0forcora/
 ```
 
 ### First start
@@ -70,7 +70,7 @@ Your parentDir should look like this now (ls -ahl):
 ```
 parentDir
 |- cora-vscodium/
-|- vscodium1_74_3forcora2/
+|- vscodium1_82_0forcora/
 |- env.sh
 |- .gitconfig
 |- .git-credentials
@@ -91,7 +91,7 @@ Below you'll find instructions on how to update different parts of cora-vscodium
 
 ## Bumping version
 If you've done any change, make sure to bump the version of cora-vscodium. The easiest way to do this, is to find/replace the current version in all repo files with the new version. You can use your editors find/replace tool for that.
-E.g. replace `vscodium1_67_2forcora2` with `vscodium1_74_3forcora2`.
+E.g. replace `vscodium1_67_2forcora2` with `vscodium1_82_0forcora`.
 At the time of writing, this results in 23 results in 7 files.
 
 
