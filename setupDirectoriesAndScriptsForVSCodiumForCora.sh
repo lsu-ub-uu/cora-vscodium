@@ -20,6 +20,7 @@ createDirectories(){
   	mkdir $INSTALLDIR
  	mkdir $INSTALLDIR/vscodium
   	mkdir $INSTALLDIR/workspace
+	mkdir $INSTALLDIR/workspace/.vscode
 }
 	
 changeAndCopyScripts(){
@@ -45,6 +46,10 @@ changeAndCopyScripts(){
 	# cp $BASEDIR/docker/derived $INSTALLDIR/workspace/.derived
 }
 
+copySettingsFile(){
+	cp $BASEDIR/settings.json $INSTALLDIR/workspace/.vscode
+}
+
 createGitConfigFile(){
 	touch $PARENTDIR/.gitconfig
 	touch $PARENTDIR/.git-credentials
@@ -53,6 +58,7 @@ createGitConfigFile(){
 if [ ! -d $INSTALLDIR ]; then
 	createDirectories
 	changeAndCopyScripts
+	createDirectories
 	createGitConfigFile
 fi
 
